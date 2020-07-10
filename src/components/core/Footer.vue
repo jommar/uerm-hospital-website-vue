@@ -3,7 +3,7 @@
     <!-- Footer -->
         <footer class="g-bg-secondary g-pt-100 g-pb-50">
             <div class="container">
-                <div class="row g-mb-40">
+                <div class="row g-mb-40 d-none">
                     <div class="col-6 col-md-3 g-mb-20">
                         <!-- Footer Links -->
                         <ul class="list-unstyled">
@@ -236,7 +236,7 @@
                     </div>
 
                     <div class="col-md-4 col-lg-3 order-md-1 g-mb-30">
-                        <p class="g-color-text mb-0">University of the East Medical Center - Since 1956</p>
+                        <p class="g-color-text mb-0">University of the East Ramon Magsaysay Medical Center - Since 1956</p>
                         <p class="g-color-text mb-0">
                             <i class="g-font-size-default fa fa-phone"></i> 8-715-0861 to 77
                         </p>
