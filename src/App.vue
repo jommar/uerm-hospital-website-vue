@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <main>
-      <Header v-bind:links="headerLinks" />
+      <Header v-bind:links="headerLinks" v-bind:changeRoute="changeRoute" />
       <Carousel v-bind:carousel="carousel" />
       <Temp />
       <Footer />
@@ -24,20 +24,21 @@ export default {
     return {
       apiKey:'eSWHugHzUmZQ2GUsBKffyNKeNZHuSWtX',
       doctors:[],
+      route:window.location.pathname,
       headerLinks:[
         [
-          {href:'#',title:'Home',},
-          {href:'#',title:'Mission Vision',},
+          {href:'/',title:'Home',},
+          {href:'/mission-vision',title:'Mission Vision',},
         ],
         [
-          {href:'#',title:'Our Services',},
-          {href:'#',title:'Wellness',},
-          {href:'#',title:'Diagnostic Centers',},
+          {href:'/our-services',title:'Our Services',},
+          {href:'/wellness',title:'Wellness',},
+          {href:'/diagnostic-centers',title:'Diagnostic Centers',},
         ],
         [
-          {href:'#',title:'Our Doctors',},
-          {href:'#',title:'Clinical Department',},
-          {href:'#',title:'Per Doctor / Specialty',},
+          {href:'/doctors',title:'Our Doctors',},
+          {href:'/departments',title:'Clinical Department',},
+          {href:'/doctor/specialty',title:'Per Doctor / Specialty',},
         ],
       ],
       carousel:[
@@ -57,10 +58,15 @@ export default {
       const responseJson = await response.json();
 
       this.doctors = responseJson.doctors;
-    }
+    },
+    changeRoute(route){
+      this.route = route;
+      window.location.pathname = this.route;
+    },
   },
   mounted(){
     // this.fetchDoctors();
+    console.log(this.route);
   }
 }
 </script>

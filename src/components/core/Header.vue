@@ -93,7 +93,8 @@
                                                     <li class="py-2" v-bind:key="itemKey" v-for="(linkItem,itemKey) in link">
                                                         <a
                                                             class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5"
-                                                            v-bind:href="linkItem.href"
+                                                            href="#"
+                                                            v-on:click.prevent="changeRoute(linkItem.href)"
                                                         >
                                                             {{linkItem.title}}
                                                             <i
@@ -123,7 +124,7 @@
 
 <script>
 export default {
-    props:["links"]
+    props:["links","changeRoute"]
 }
 </script>
 
