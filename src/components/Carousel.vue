@@ -11,8 +11,8 @@
         >
             <!-- Carousel Slides -->
             <div
-                v-bind:key="item"
-                v-for="item in carousel"
+                v-bind:key="key"
+                v-for="(item,key) in carousel"
                 class="js-slide h-100 g-flex-centered g-bg-img-hero g-bg-cover g-bg-black-opacity-0_3--after"
                 v-bind:style="{'background-image':item.backgroundImage}"
             >

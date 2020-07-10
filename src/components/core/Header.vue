@@ -60,8 +60,8 @@
                                     data-animation-in="fadeIn"
                                     data-animation-out="fadeOut"
                                     data-position="left"
-                                    v-for="link in links"
-                                    v-bind:key="link"
+                                    v-for="(link, key) in links"
+                                    v-bind:key="key"
                                 >
                                     <a
                                         id="mega-menu-label-1"
@@ -90,7 +90,7 @@
                                             <div class="col-sm-6 col-lg-3">
                                                 <!-- Links -->
                                                 <ul class="list-unstyled g-pr-30 mb-0">
-                                                    <li class="py-2" v-bind:key="linkItem" v-for="linkItem in link">
+                                                    <li class="py-2" v-bind:key="itemKey" v-for="(linkItem,itemKey) in link">
                                                         <a
                                                             class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5"
                                                             v-bind:href="linkItem.href"

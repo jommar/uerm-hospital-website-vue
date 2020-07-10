@@ -22,6 +22,8 @@ export default {
   },
   data(){
     return {
+      apiKey:'eSWHugHzUmZQ2GUsBKffyNKeNZHuSWtX',
+      doctors:[],
       headerLinks:[
         [
           {href:'#',title:'Home',},
@@ -43,7 +45,22 @@ export default {
         {backgroundImage:'url(assets/img-temp/1920x1080/img3.jpg)',title:'Lorem Ipsum',content:'Cras vitae purus sit amet ipsum egestas vestibulum. Nam euismod nisl at magna mattis, quis mattis odio bibendum. Phasellus elementum sodales mauris, at scelerisque mi eleifend efficitur.',},
         {backgroundImage:'url(assets/img-temp/1920x1080/img1.jpg)',title:'Lorem Ipsum',content:'Cras vitae purus sit amet ipsum egestas vestibulum. Nam euismod nisl at magna mattis, quis mattis odio bibendum. Phasellus elementum sodales mauris, at scelerisque mi eleifend efficitur.',},
       ],
+    };
+  },
+  methods:{
+    async fetchDoctors(){
+      const url = `https://apps.uerm.edu.ph:3443/doctors?auth=${this.apiKey}`;
+      const response = await fetch(
+        url,
+        {method:'GET'}
+      );
+      const responseJson = await response.json();
+
+      this.doctors = responseJson.doctors;
     }
+  },
+  mounted(){
+    // this.fetchDoctors();
   }
 }
 </script>
