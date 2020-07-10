@@ -7,8 +7,8 @@
         <Temp />
       </div>
 
-      <div v-if="route == '/doctors' && doctors.length > 0">
-        <Doctors v-bind:doctors="doctors" />
+      <div v-if="route == '/doctors'">
+        <Doctors v-bind:doctors="doctors" v-bind:isDoctorsLoaded="isDoctorsLoaded" v-bind:filterDoctors="filterDoctors" v-bind:alphabet="alphabet" />
       </div>
       <Footer />
     </main>
@@ -31,7 +31,10 @@ export default {
     return {
       apiKey:'eSWHugHzUmZQ2GUsBKffyNKeNZHuSWtX',
       doctors:[],
+      doctorsAll:[],
+      isDoctorsLoaded:false,
       route:window.location.pathname,
+      alphabet:['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       headerLinks:[
         [
           {href:'/',title:'Home',},
@@ -64,11 +67,20 @@ export default {
       );
       const responseJson = await response.json();
 
-      this.doctors = responseJson.doctors;
+      this.doctorsAll = responseJson.doctors;
+      this.doctors = this.doctorsAll;
+      this.isDoctorsLoaded = true;
     },
     changeRoute(route){
       this.route = route;
       window.location.pathname = this.route;
+    },
+    filterDoctors(letter){
+      if(letter == ''){
+        this.doctors = this.doctorsAll;
+        return;
+      }
+      this.doctors = this.doctorsAll.filter((doctor)=>{return doctor.fullName.substring(0,1) == letter});
     },
   },
   mounted(){
