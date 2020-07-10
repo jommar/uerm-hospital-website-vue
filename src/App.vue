@@ -2,8 +2,14 @@
   <div id="app">
     <main>
       <Header v-bind:links="headerLinks" v-bind:changeRoute="changeRoute" />
-      <Carousel v-bind:carousel="carousel" />
-      <Temp />
+      <div v-if="route == '/'">
+        <Carousel v-bind:carousel="carousel" />
+        <Temp />
+      </div>
+
+      <div v-if="route == '/doctors' && doctors.length > 0">
+        <Doctors v-bind:doctors="doctors" />
+      </div>
       <Footer />
     </main>
   </div>
@@ -14,11 +20,12 @@ import Header from './components/core/Header'
 import Carousel from './components/Carousel'
 import Temp from './components/Temp'
 import Footer from './components/core/Footer'
+import Doctors from './components/Doctors'
 
 export default {
   name: 'App',
   components: {
-    Header,Carousel,Temp,Footer
+    Header,Carousel,Temp,Footer,Doctors
   },
   data(){
     return {
@@ -66,6 +73,11 @@ export default {
   },
   mounted(){
     // this.fetchDoctors();
+    switch(this.route){
+      case '/doctors':
+        this.fetchDoctors();
+        break;
+    }
     console.log(this.route);
   }
 }
