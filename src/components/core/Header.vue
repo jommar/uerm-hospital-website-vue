@@ -108,7 +108,6 @@
 
 <script>
 export default {
-  props: ["links", "changeRoute"],
   data(){
     return{
       links:[
