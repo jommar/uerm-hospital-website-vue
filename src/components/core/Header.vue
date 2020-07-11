@@ -14,7 +14,7 @@
               <img class="img-fluid g-hidden-lg-down" src="assets/img/logo/logo.png" alt="Logo" />
               <img
                 class="img-fluid g-width-80 g-hidden-md-down g-hidden-xl-up"
-                src="assets/img/logo/logo-mini.png"
+                src="assets/img/logo/logo.png"
                 alt="Logo"
               />
               <img class="img-fluid g-hidden-lg-up" src="assets/img/logo/logo.png" alt="Logo" />
