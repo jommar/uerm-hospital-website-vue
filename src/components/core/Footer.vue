@@ -221,6 +221,11 @@
           </div>
         </div>
         <!-- End Footer Copyright -->
+        <div class="row text-center">
+          <div class="col-6 col-md-4"><a href="/">Home</a></div>
+          <div class="col-6 col-md-4"><a href="/wellness">Welness</a></div>
+          <div class="col-6 col-md-4"><a href="/doctors">Doctors</a></div>
+        </div>
       </div>
     </footer>
     <!-- End Footer -->
