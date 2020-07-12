@@ -5,12 +5,16 @@
 
       <div v-if="route == '/'">
         <Carousel />
-        <News />
+        <News id="news" />
         <Promos />
       </div>
 
       <div v-if="route == '/doctors'">
         <Doctors v-bind:apiKey="apiKey" />
+      </div>
+
+      <div v-if="route == '/wellness'">
+        <Wellness />
       </div>
 
       <Footer />
@@ -25,11 +29,12 @@ import Footer from './components/core/Footer'
 import Doctors from './components/Doctors'
 import News from './components/News'
 import Promos from './components/Promos'
+import Wellness from './components/Wellness'
 
 export default {
   name: 'App',
   components: {
-    Header,Carousel,Footer,Doctors,News,Promos
+    Header,Carousel,Footer,Doctors,News,Promos,Wellness
   },
   data(){
     return {
