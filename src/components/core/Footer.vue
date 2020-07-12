@@ -3,156 +3,6 @@
     <!-- Footer -->
     <footer class="g-bg-secondary g-pt-100 g-pb-50">
       <div class="container">
-        <div class="row g-mb-40 d-none">
-          <div class="col-6 col-md-3 g-mb-20">
-            <!-- Footer Links -->
-            <ul class="list-unstyled">
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Future Students</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Current Students</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Alumni</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Faculty &amp; Staff</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Donors</a>
-              </li>
-            </ul>
-            <!-- End Footer Links -->
-          </div>
-
-          <div class="col-6 col-md-3 g-mb-20">
-            <!-- Footer Links -->
-            <ul class="list-unstyled">
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >News &amp; Media</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Research &amp; Innovation</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Academics</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Programs of Study</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >University Life</a>
-              </li>
-            </ul>
-            <!-- End Footer Links -->
-          </div>
-
-          <div class="col-6 col-md-3 g-mb-20">
-            <!-- Footer Links -->
-            <ul class="list-unstyled">
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Contacts</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Careers</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Accessibility</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Privacy</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Site Feedback</a>
-              </li>
-            </ul>
-            <!-- End Footer Links -->
-          </div>
-
-          <div class="col-6 col-md-3 g-mb-20">
-            <!-- Footer Links -->
-            <ul class="list-unstyled">
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Downtown Ontario Campus</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Mississauga Campus</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Scarborough Campus</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Campus Maps</a>
-              </li>
-              <li class="g-py-5">
-                <a
-                  class="u-link-v5 g-color-footer-links g-color-primary--hover g-font-size-16"
-                  href="#"
-                >Campus Safety</a>
-              </li>
-            </ul>
-            <!-- End Footer Links -->
-          </div>
-        </div>
-
         <!-- Footer Copyright -->
         <div class="row justify-content-lg-center align-items-center text-center">
           <div class="col-sm-6 col-md-4 col-lg-3 order-md-3 g-mb-30">
@@ -222,9 +72,9 @@
         </div>
         <!-- End Footer Copyright -->
         <div class="row text-center">
-          <div class="col-6 col-md-4"><a href="/">Home</a></div>
-          <div class="col-6 col-md-4"><a href="/wellness">Welness</a></div>
-          <div class="col-6 col-md-4"><a href="/doctors">Doctors</a></div>
+          <div class="col-6 col-md-4" v-bind:key="key" v-for="(nav, key) in navs">
+            <a v-bind:href="nav.url">{{nav.title}}</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -233,7 +83,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      navs: [
+        { url: "/", title: "Home" },
+        { url: "/wellness", title: "Welness" },
+        { url: "/doctors", title: "Doctors" }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
